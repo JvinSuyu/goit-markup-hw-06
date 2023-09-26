@@ -856,13 +856,13 @@ main {
     background: transparent;
 }
 .form-group-input svg {
-    fill: var(--lightslate);
+    fill: var(--navyblue);
     transition: fill var(--transition-duration) var(--animation-timing-function);
 }
-.form-group-input:focus-within svg {
+.form-group-input:focus-within svg, .form-group-input:hover svg {
     fill: var(--iris);
 }
-.form-group-input:focus-within {
+.form-group-input:focus-within, .form-group-input:hover{
     border: 1px solid var(--iris);
 }
 .form-group textarea {
@@ -936,6 +936,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .submit-btn button[type="submit"] {
@@ -949,6 +950,7 @@ main {
     background: var(--iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: all var(--transition-duration) var(--animation-timing-function);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-btn button[type="submit"]:hover {
