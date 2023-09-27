@@ -687,7 +687,7 @@ main {
     color: var(--white);
     background: transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email-form-group-input::placeholder {
@@ -776,6 +776,7 @@ main {
     right: 20px;
     top: 20px;
     cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover {
@@ -819,6 +820,7 @@ main {
     align-items: flex-start;
     flex-direction: column;
     gap: 16px;
+    
 }
 .form-group {
     width: 100%;
@@ -842,6 +844,7 @@ main {
     border-radius: 4px;
     border: 1px solid  rgba(46, 47, 66, 0.40);
     padding: 8px 16px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-group-input svg {
     fill: var(--navyblue);
@@ -875,8 +878,9 @@ main {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-group textarea:focus {
+.form-group textarea:hover {
     border: 1px solid var(--iris);
 }
 
@@ -908,11 +912,13 @@ main {
     padding: 1px;
     fill: none;
     transition: fill var(--transition-duration) var(--animation-timing-function);
+    
 }
 
 .form-group-agree input[type="checkbox"]:checked+label svg {
     fill: var(--white);
     background-color: var(--iris);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-group-agree label {
@@ -936,7 +942,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .submit-btn button[type="submit"] {
@@ -951,6 +956,7 @@ main {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: all var(--transition-duration) var(--animation-timing-function);
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .submit-btn button[type="submit"]:hover {
@@ -958,5 +964,5 @@ main {
 }
 
 .submit-btn button[type="submit"]:active {
-    background: var(--green);
+    background: var(--ocean);
 }
